@@ -1,0 +1,7 @@
+# chcek if the mutation test is passing using the mutation action agaist the pom.xml threshold 
+# run the mutation test 
+# add a if always such tht if the mutation test is failing then fail the build  
+# if the mutation test is passing then pass the build 
+# add the mution plugin to the pom.xml 
+#then the mutation test comes after the unit tetsing 
+ 

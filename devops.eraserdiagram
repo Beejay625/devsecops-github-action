@@ -1,0 +1,99 @@
+cloud-architecture-diagram
+developer [icon:user]
+github [icon:github]
+branches {
+  dev [icon:git-branch]
+  qa [icon:git-branch]
+  production [icon:git-branch]
+  feature-branch [icon:git-branch]
+}
+
+// define the connectcion
+developer > feature-branch :create feature branch 
+developer > github : pull,add,commit,push-feature
+github > feature-branch
+feature-branch > dev : pull-request
+dev > qa : pull request
+qa > production : pull-request
+
+
+development {
+    scan-git-repo{
+        unit-test [icon:monitor]
+        scan-for-secrets [icon:user-secret]
+        chcek-git-ignore [icon:monitor]
+        update-git-ignore [icon:monitor]
+        chcek-if-commit-is-signed [icon:monitor]
+    }
+    pre-commit{
+        unit-test [icon:monitor]
+        scan-for-secrets [icon:user-secret]
+        chcek-git-ignore [icon:monitor]
+        update-git-ignore [icon:monitor]
+        chcek-if-commit-is-signed [icon:monitor]
+    }
+   
+       
+
+
+
+
+
+
+
+
+    application_pipeline [icon:github-actions]
+saaaaa {
+
+   secret-management [icon:user-secret]
+   unit-test [icon:monitor]
+   code-coverage [icon:monitor]
+   mutation-test [icon:monitor]
+   sca[icon:monitor]
+   sast [icon: monitor]
+   local-build [icon:monitor]
+   integration-test [icon:monitor]
+   Iast [icon: monitor]
+   policy-as-code [icon: monitor]
+   baseimage-scanning [icon:monitor]
+   docker-build [icon:monitor]
+   docker-push [icon:monitor]
+   scan-build-image [icon: monitor]
+   api-security [icon: monitor]
+   get-result-of-iac-pipeline [icon: monitor]
+   application-deployment [icon:k8s-deploy]
+   dast [icon: monitor]
+   monitoring [icon:monitor]
+   feedback [icon:monitor]
+   incident-response [icon:monitor]
+}
+
+iac_pipeline [icon:terraform]
+stages {
+   pre-commit [icon:github-actions]
+   scan-git-repo[icon:github]
+   secret-management [icon:user-secret]
+   sca[icon:monitor]
+   sast [icon: monitor]
+   test-cases [icon:monitor]
+   policy-as-code_and [icon: monitor]
+   Iac-vulnerability-scanning [icon: monitor]
+   deployment [icon:terraform]
+   Compliance-as-Code [icon:monitor]
+   CNAPP[icon:monitor]
+   monitoring [icon:monitor]
+   
+   
+}
+
+
+
+
+
+
+
+
+// Define groups and nodes
+
+
+ 

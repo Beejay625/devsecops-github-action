@@ -1,0 +1,1 @@
+# run a code coverage to know how many lines was pused or pull request using jacoco action on the pom-xml and add a if always such thtat if the stage fails it still runs 

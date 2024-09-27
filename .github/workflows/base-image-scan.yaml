@@ -1,0 +1,8 @@
+# #we will be using the trivy action to scan the container image 
+# # and if the scan is failing then fail the build 
+# #make use of exit code to fail the build 
+# add befor the docker build to scan for the docker base iamge 
+# write a sh script that will contain all the trivy command  to scan the container image and if the scan is failing then fail the build 
+# and also use it to scan the image after the build 
+
+

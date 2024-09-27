@@ -1,0 +1,3 @@
+# used for scanning the kubernates manifest for the misconfigurations and rectify them 
+# make use of the kubesec action to scan the kubernates manifest or curl comman and get the score and message with the help of jq command 
+# use bash to run to use scan score to ech and fail the build or pass the build 

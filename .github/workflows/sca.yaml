@@ -1,0 +1,7 @@
+# # for dependecy chcek 
+# # we will be using depency chcek 
+# # add dependency chcek plug in to the pom.xml 
+# # run the dependency check action 
+# # add a if always such tht if the dependency check is failing then fail the build 
+# add the cvss score for threshold  to fail build using the pom 
+

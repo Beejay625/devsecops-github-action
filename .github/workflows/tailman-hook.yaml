@@ -1,0 +1,4 @@
+#add a tailman-hook to the github action to run a tailman command to check the syntax of the yaml file in the path 
+cd into the .git and run the tails man command if it a pre commit hook  or pre push 
+then run the script to add it to the git hook 
+write a script that  make it easy for develops to bypass scan 

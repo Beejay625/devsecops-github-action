@@ -1,0 +1,7 @@
+#run sast scan using the sonar cloud action 
+#use sonar get quality gate action to get the quality gate and send to any where or fail  or pause the pipeline 
+# add the quality gate to the sonar cloud action 
+# add a if always such tht if the quality gate is failing then fail the build 
+# and other if always condition
+# wait for 2 minutes to get the quality gate from the sonar cloud 
+# any time you resrat uyour vm or agen always resrt sonarcube   

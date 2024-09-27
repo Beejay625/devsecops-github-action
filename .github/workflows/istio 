@@ -1,0 +1,5 @@
+implement istio 
+create a virtual service and the gateway 
+use kiagli 
+enable mtls 
+read about dns spoofing by aqau on kubernates 
